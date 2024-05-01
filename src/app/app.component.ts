@@ -31,4 +31,9 @@ export class AppComponent {
     }
   }
 
+  checkEnter(event: KeyboardEvent) {
+    if (event.key === 'Enter') {
+      this.addTodo();
+    }
+  }
 }

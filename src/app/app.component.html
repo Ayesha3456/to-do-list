@@ -1,7 +1,7 @@
 <h1>TO-DO LIST</h1>
 <div class="card au-card">
   <div class="input-group mb-3 ax-align">
-    <input class="ax-btn" type="text" [(ngModel)]="newTodoText">
+    <input class="ax-btn" type="text" [(ngModel)]="newTodoText" id="todoInput" (keyup)="checkEnter($event)">
     <button class="btn btn-outline-secondary ax--btn" type="button" id="button-addon2" (click)="addTodo()">Add</button>
   </div>
   <div *ngIf="showEmptyMessage" class="empty-message">
